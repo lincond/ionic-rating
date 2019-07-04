@@ -58,7 +58,10 @@ export class RatingComponent implements ControlValueAccessor {
   _onChange: Function;
 
   onClick(rate) {
-    this.rate = rate;
+    if(this.rate === rate)
+      this.rate = 0;
+    else
+      this.rate = rate;
     this.rateChange.emit(this.rate);
     this._onChange(this.rate);
   }
