@@ -17,7 +17,7 @@ import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 
 // Import ionic-rating module
-import { IonicRatingModule } from 'ionic-rating';
+import { IonicRatingModule } from 'ionic4-rating';
 
 @NgModule({
   declarations: [
@@ -44,7 +44,7 @@ If you are using `Lazy Loading` in your application, add the `IonicRatingModule`
 import { NgModule } from '@angular/core';
 import { IonicPageModule } from 'ionic-angular';
 import { ProfilePage } from './profile';
-import { IonicRatingModule } from "ionic-rating";
+import { IonicRatingModule } from "ionic4-rating";
 
 @NgModule({
   declarations: [
