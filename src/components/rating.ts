@@ -55,7 +55,7 @@ export class RatingComponent implements ControlValueAccessor {
   @Output()
   rateChange: EventEmitter<number> = new EventEmitter();
   hoverRate: number;
-  _onChange: Function;
+  _onChange: Function = (_: any) => {};
 
   onClick(rate) {
     this.rate = rate;
